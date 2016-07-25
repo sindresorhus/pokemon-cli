@@ -1,0 +1,51 @@
+{
+  "name": "pokemon-cli",
+  "version": "0.0.0",
+  "description": "Get Pokémon names",
+  "license": "MIT",
+  "repository": "sindresorhus/pokemon-cli",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "bin": {
+    "pokemon": "cli.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "pokemon",
+    "names",
+    "creatures",
+    "words",
+    "list",
+    "array",
+    "random",
+    "mock",
+    "placeholder",
+    "fixture",
+    "data"
+  ],
+  "dependencies": {
+    "meow": "^3.7.0",
+    "pokemon": "^0.1.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "execa": "^0.4.0",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
