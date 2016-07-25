@@ -38,7 +38,7 @@
   ],
   "dependencies": {
     "meow": "^3.7.0",
-    "pokemon": "^0.1.0"
+    "pokemon": "^0.2.0"
   },
   "devDependencies": {
     "ava": "*",
