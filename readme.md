@@ -18,13 +18,19 @@ $ pokemon --help
   Examples
     $ pokemon
     Snorlax
+    $ pokemon -n 4
+    Regigigas
+    Aurorus
+    Bunnelby
+    Smeargle
     $ pokemon --all
     Bulbasaur
     Ivysaur
     ...
 
   Options
-    --all  Get all the names instead of a random name
+    --all  Get all the names
+    -n=N   Get N random names if N is an integer, otherwise random
 ```
 
 
