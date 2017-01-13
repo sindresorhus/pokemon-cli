@@ -38,14 +38,11 @@
   ],
   "dependencies": {
     "meow": "^3.7.0",
-    "pokemon": "^0.2.0"
+    "pokemon": "^1.1.0"
   },
   "devDependencies": {
     "ava": "*",
-    "execa": "^0.4.0",
+    "execa": "^0.6.0",
     "xo": "*"
-  },
-  "xo": {
-    "esnext": true
   }
 }
