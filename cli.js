@@ -16,4 +16,4 @@ const cli = meow(`
 	  --all  Get all the names instead of a random name
 `);
 
-console.log(cli.flags.all ? pokemon.all.join('\n') : pokemon.random());
+console.log(cli.flags.all ? pokemon.all().join('\n') : pokemon.random());
