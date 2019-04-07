@@ -4,6 +4,13 @@ const meow = require('meow');
 const pokemon = require('pokemon');
 
 const cli = meow(`
+	Usage:
+	  $ pokemon
+
+	Options
+	  --all       Get all the names instead of a random name
+	  --language  Specify a language  [Default: en]  [Values: de, en, fr, ja, ko, ru, zh-Hans, zh-Hant]
+
 	Examples
 	  $ pokemon
 	  Snorlax
@@ -13,18 +20,19 @@ const cli = meow(`
 	  …
 	  $ pokemon --language=ja
 	  マクノシタ
-
-	Options
-	  --all       Get all the names instead of a random name
-	  --language  Set the language for the pokemon  [Default: en]
 `, {
-	  flags: {
-	      language: {
-	          default: 'en',
-	          type: 'string'
-	      }
-	  }
+	flags: {
+		all: {
+			type: 'boolean',
+			default: false
+		},
+		language: {
+			type: 'string',
+			default: 'en'
+		}
+	}
 });
 
 const {all, language} = cli.flags;
+
 console.log(all ? pokemon.all(language).join('\n') : pokemon.random(language));

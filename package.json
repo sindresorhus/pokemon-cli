@@ -1,48 +1,48 @@
 {
-  "name": "pokemon-cli",
-  "version": "1.0.1",
-  "description": "Get Pokémon names",
-  "license": "MIT",
-  "repository": "sindresorhus/pokemon-cli",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "bin": {
-    "pokemon": "cli.js"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "cli.js"
-  ],
-  "keywords": [
-    "cli-app",
-    "cli",
-    "pokemon",
-    "names",
-    "creatures",
-    "words",
-    "list",
-    "array",
-    "random",
-    "mock",
-    "placeholder",
-    "fixture",
-    "data"
-  ],
-  "dependencies": {
-    "meow": "^3.7.0",
-    "pokemon": "^1.1.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "execa": "^0.6.0",
-    "xo": "*"
-  }
+	"name": "pokemon-cli",
+	"version": "1.0.1",
+	"description": "Get Pokémon names",
+	"license": "MIT",
+	"repository": "sindresorhus/pokemon-cli",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"bin": {
+		"pokemon": "cli.js"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		"pokemon",
+		"names",
+		"creatures",
+		"words",
+		"list",
+		"array",
+		"random",
+		"mock",
+		"placeholder",
+		"fixture",
+		"data"
+	],
+	"dependencies": {
+		"meow": "^5.0.0",
+		"pokemon": "^1.1.0"
+	},
+	"devDependencies": {
+		"ava": "^1.4.1",
+		"execa": "^1.0.0",
+		"xo": "^0.24.0"
+	}
 }
