@@ -27,7 +27,7 @@ $ pokemon --help
 
   Options
     --all      Get all the names instead of a random name
-	  --language Set the language for the pokemon. Defaults to 'en'
+    --language Set the language for the pokemon. Defaults to 'en'
 ```
 
 
