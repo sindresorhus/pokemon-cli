@@ -18,13 +18,16 @@ $ pokemon --help
   Examples
     $ pokemon
     Snorlax
+	  $ pokemon --language ja
+	  マクノシタ
     $ pokemon --all
     Bulbasaur
     Ivysaur
     ...
 
   Options
-    --all  Get all the names instead of a random name
+    --all      Get all the names instead of a random name
+	  --language Set the language for the pokemon. Defaults to 'en'
 ```
 
 
