@@ -10,10 +10,21 @@ const cli = meow(`
 	  $ pokemon --all
 	  Bulbasaur
 	  Ivysaur
-	  ...
+	  …
+	  $ pokemon --language=ja
+	  マクノシタ
 
 	Options
-	  --all  Get all the names instead of a random name
-`);
+	  --all       Get all the names instead of a random name
+	  --language  Set the language for the pokemon  [Default: en]
+`, {
+	  flags: {
+	      language: {
+	          default: 'en',
+	          type: 'string'
+	      }
+	  }
+});
 
-console.log(cli.flags.all ? pokemon.all().join('\n') : pokemon.random());
+const {all, language} = cli.flags;
+console.log(all ? pokemon.all(language).join('\n') : pokemon.random(language));

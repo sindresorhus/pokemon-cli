@@ -21,10 +21,13 @@ $ pokemon --help
     $ pokemon --all
     Bulbasaur
     Ivysaur
-    ...
+    …
+    $ pokemon --language=ja
+    マクノシタ
 
   Options
-    --all  Get all the names instead of a random name
+    --all       Get all the names instead of a random name
+    --language  Set the language for the pokemon  [Default: en]
 ```
 
 
