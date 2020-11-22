@@ -10,7 +10,7 @@ const cli = meow(`
 	Options
 	  --all       Get all the names instead of a random name
 	  --language  Specify a language  [Default: en]  [Values: de, en, fr, ja, ko, ru, zh-Hans, zh-Hant]
-
+	  --number	  Specifies the pokedex number of the pokemon to print
 	Examples
 	  $ pokemon
 	  Snorlax
@@ -29,10 +29,20 @@ const cli = meow(`
 		language: {
 			type: 'string',
 			default: 'en'
+		},
+		number: {
+			type: 'int',
+			default: 0
 		}
 	}
 });
 
-const {all, language} = cli.flags;
 
-console.log(all ? pokemon.all(language).join('\n') : pokemon.random(language));
+const { all, language, number } = cli.flags;
+if(number == 0){
+let random_pokemon = pokemon.random(language);
+let random_pokemon_id = pokemon.getId(random_pokemon);
+console.log(all ? pokemon.all(language).join('\n') : random_pokemon + " " + random_pokemon_id);
+}else{
+	console.log(pokemon.getName(number, language));
+}
