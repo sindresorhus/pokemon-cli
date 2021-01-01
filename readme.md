@@ -1,4 +1,4 @@
-# pokemon-cli [![Build Status](https://travis-ci.org/sindresorhus/pokemon-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/pokemon-cli)
+# pokemon-cli
 
 > Get [Pokémon](https://en.wikipedia.org/wiki/Pok%C3%A9mon) names
 
